@@ -15,23 +15,27 @@ Below are some of the business questions we aim to answer with this project.
 Time Frame: March 19, 2024 - April 23, 2024
 
 
+
+
 Architecture Diagram
-![image](https://github.com/ravishankar324/Youtube_Data_Analysis/assets/131810013/5f3fa1a9-f512-4a1e-8718-8dcd9f3af749)
+
+![image](https://github.com/ravishankar324/Youtube_Data_Analysis/assets/131810013/c1a47986-6cbc-4c5b-a287-10a3c3cb0fbe)
+
 
 
 
 Goals
-•	AWS Cloud - Processing vast amounts of data to answer business questions could be challenging on local computers, so need to use the cloud, in this case, we will use AWS.
-•	Data Ingestion - Build a mechanism to ingest data into S3. Involves planning a strategy to handle both CSV and JSON files extracted from Kaggle.
-•	Staging - Build a staging Layer using the Glue catalog for further processing of JSON and CSV data.
-•	Testing - Testing small of CSV and JSON Data with AWS lambda and AWS glue before automating the entire processing layer. 
-•	ETL ( Extract, Transform, Load ) - Both CSV and JSON Data in raw format should be cleaned and transformed into parquet format using AWS Lambda and AWS Glue.
-•	Automation - Make sure the entire ETL is automated to handle higher throughputs using AWS lambda triggers.
-•	Data lake - All the cleaned data from CSV and JSON needs a centralized repo such as S3 to store them to perform further transformations and loading into the warehouse.
-•	Analytics - further transformed data should be loaded into Redshift for faster querying and analytics purposes.
-•	Reporting - Build a dashboard from Redshift to get insights required for business needs using Amazon Quick Sight.
-•	Scalability - As the size of data increases, we need to make sure the architecture built scales it.
-•	Monitoring - Use Cloudwatch to monitor logs across all AWS services.
+1. AWS Cloud - Processing vast amounts of data to answer business questions could be challenging on local computers, so need to use the cloud, in this case, we will use AWS.
+2. Data Ingestion - Build a mechanism to ingest data into S3. Involves planning a strategy to handle both CSV and JSON files extracted from Kaggle.
+3. Staging - Build a staging Layer using the Glue catalog for further processing of JSON and CSV data.
+4. Testing - Testing small of CSV and JSON Data with AWS lambda and AWS glue before automating the entire processing layer. 
+5. ETL ( Extract, Transform, Load ) - Both CSV and JSON Data in raw format should be cleaned and transformed into parquet format using AWS Lambda and AWS Glue.
+6. Automation - Make sure the entire ETL is automated to handle higher throughputs using AWS lambda triggers.
+7. Data lake - All the cleaned data from CSV and JSON needs a centralized repo such as S3 to store them to perform further transformations and loading into the warehouse.
+8. Analytics - further transformed data should be loaded into Redshift for faster querying and analytics purposes.
+9. Reporting - Build a dashboard from Redshift to get insights required for business needs using Amazon Quick Sight.
+10. Scalability - As the size of data increases, we need to make sure the architecture built scales it.
+11. Monitoring - Use Cloudwatch to monitor logs across all AWS services.
 
 
 Services
