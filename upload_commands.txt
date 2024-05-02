@@ -1,0 +1,14 @@
+aws s3 cp CAvideos.csv s3://dataengineering-cloudcomputing-project-raw-data/youtube/raw_data_csv/region=ca/
+aws s3 cp DEvideos.csv s3://dataengineering-cloudcomputing-project-raw-data/youtube/raw_data_csv/region=de/
+aws s3 cp FRvideos.csv s3://dataengineering-cloudcomputing-project-raw-data/youtube/raw_data_csv/region=fr/
+aws s3 cp GBvideos.csv s3://dataengineering-cloudcomputing-project-raw-data/youtube/raw_data_csv/region=gb/
+aws s3 cp INvideos.csv s3://dataengineering-cloudcomputing-project-raw-data/youtube/raw_data_csv/region=in/
+aws s3 cp JPvideos.csv s3://dataengineering-cloudcomputing-project-raw-data/youtube/raw_data_csv/region=jp/
+aws s3 cp KRvideos.csv s3://dataengineering-cloudcomputing-project-raw-data/youtube/raw_data_csv/region=kr/
+aws s3 cp MXvideos.csv s3://dataengineering-cloudcomputing-project-raw-data/youtube/raw_data_csv/region=mx/
+aws s3 cp RUvideos.csv s3://dataengineering-cloudcomputing-project-raw-data/youtube/raw_data_csv/region=ru/
+aws s3 cp USvideos.csv s3://dataengineering-cloudcomputing-project-raw-data/youtube/raw_data_csv/region=us/
+
+
+aws s3 cp . s3://dataengineering-cloudcomputing-project-raw-data/youtube/raw_data_json/ --recursive --exclude "*" --include "*.json"
+
