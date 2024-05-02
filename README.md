@@ -1,5 +1,7 @@
 
 Check out this document at https://ravishankar324.bitdocs.ai/share/d/v1ds8Emr3VNAi9yp
+
+
 Youtube Data Analysis
 Overview : YouTube Data Analysis project involves securely managing, streamlining, and performing analysis on the structured and semi-structured data based on the video categories and trending metrics to visualize data insights to answer business questions.
 
@@ -14,7 +16,7 @@ Time Frame: March 19, 2024 - April 23, 2024
 
 
 Architecture Diagram
-![image](https://github.com/ravishankar324/Youtube_Data_Analysis/assets/131810013/dca5ce7a-5111-4acb-9e02-4366fc85d2bb)
+![image](https://github.com/ravishankar324/Youtube_Data_Analysis/assets/131810013/5f3fa1a9-f512-4a1e-8718-8dcd9f3af749)
 
 
 
