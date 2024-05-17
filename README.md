@@ -12,7 +12,7 @@ Below are some of the business questions we aim to answer with this project.
 3. Which videos are most disliked based on category and region? 
 4. What are the total number of likes across all videos in regions Canada, United States, and Great Britain? 
 5. Which category of videos are most liked? 
-Time Frame: March 19, 2024 - April 23, 2024
+
 
 
 
