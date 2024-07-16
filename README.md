@@ -11,7 +11,7 @@ YouTube Data Analysis project involves developing ETL pipeline using AWS service
 4. What are the total number of likes across all videos in regions Canada, United States, and Great Britain? 
 5. Which category of videos are most liked? 
 
-# Architecture Diagram
+## Architecture Diagram
 
 ![youtube_data_analysis_architecture_100%](https://github.com/user-attachments/assets/82dd370e-38d3-43a7-9acf-f2190f9822d9)
 
