@@ -1,0 +1,3024 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0524.1403                               -->
+<workbook original-version='18.1' source-build='2024.1.3 (20241.24.0524.1403)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <CollapsiblePane />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+    <ZoneVisibilityControl />
+  </document-format-change-manifest>
+  <repository-location id='youtube_data_metrics' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='youtube_data_visualization Extract' inline='true' name='federated.0hlkdbr1uetr8u166hq2k0o362ce' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='youtube_data_visualization' name='hyper.0ithlu8184lvvp1av905l1pc4tpd'>
+            <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/ravis/OneDrive/Documents/DataW/Projects/YOUTUBE_DATA_ETL_PROJECT/youtube_data_visualization.hyper' default-settings='yes' server='' sslmode='' username='tableau_internal_user' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='hyper.0ithlu8184lvvp1av905l1pc4tpd' name='Extract' table='[Extract].[Extract]' type='table'>
+          <columns>
+            <column datatype='string' date-parse-format='dd.yy.MM' name='trending_date' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='hyper.0ithlu8184lvvp1av905l1pc4tpd' name='Extract' table='[Extract].[Extract]' type='table'>
+          <columns>
+            <column datatype='string' date-parse-format='dd.yy.MM' name='trending_date' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>kind</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[kind]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>kind</remote-alias>
+            <ordinal>0</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>etag</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[etag]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>etag</remote-alias>
+            <ordinal>1</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>28</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>2</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>14</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>snippet_channelid</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[snippet_channelid]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>snippet_channelid</remote-alias>
+            <ordinal>3</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>snippet_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[snippet_title]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>snippet_title</remote-alias>
+            <ordinal>4</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>14</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>snippet_assignable</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[snippet_assignable]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>snippet_assignable</remote-alias>
+            <ordinal>5</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region_name]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>region_name</remote-alias>
+            <ordinal>6</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>video_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[video_id]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>video_id</remote-alias>
+            <ordinal>7</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1935</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trending_date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[trending_date]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>trending_date</remote-alias>
+            <ordinal>8</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>231</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>9</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1929</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channel_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[channel_title]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>channel_title</remote-alias>
+            <ordinal>10</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1157</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[category_id]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>category_id</remote-alias>
+            <ordinal>11</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>14</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>publish_time</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[publish_time]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>publish_time</remote-alias>
+            <ordinal>12</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1935</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tags</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tags]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>tags</remote-alias>
+            <ordinal>13</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>277</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>views</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[views]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>views</remote-alias>
+            <ordinal>14</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>4667</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>likes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[likes]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>likes</remote-alias>
+            <ordinal>15</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3720</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dislikes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dislikes]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>dislikes</remote-alias>
+            <ordinal>16</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1715</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comment_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[comment_count]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>comment_count</remote-alias>
+            <ordinal>17</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>2487</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>thumbnail_link</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[thumbnail_link]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>thumbnail_link</remote-alias>
+            <ordinal>18</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1935</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comments_disabled</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[comments_disabled]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>comments_disabled</remote-alias>
+            <ordinal>19</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ratings_disabled</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[ratings_disabled]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ratings_disabled</remote-alias>
+            <ordinal>20</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>video_error_or_removed</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[video_error_or_removed]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>video_error_or_removed</remote-alias>
+            <ordinal>21</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>4</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>22</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1401</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>23</ordinal>
+            <family>youtube_clean_data</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Date' datatype='date' datatype-customized='true' name='[Calculation_878764917410414593]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATE(DATEPARSE(&quot;yy.dd.MM&quot;, [trending_date]))' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Extract' datatype='table' name='[__tableau_internal_object_id__].[Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273]' role='measure' type='quantitative' />
+      <column caption='Category Id' datatype='integer' name='[category_id]' role='dimension' type='ordinal' />
+      <column aggregation='CountD' caption='Channel Title' datatype='string' default-role='measure' default-type='quantitative' name='[channel_title]' role='dimension' type='nominal' />
+      <column caption='Comment Count' datatype='integer' name='[comment_count]' role='measure' type='quantitative' />
+      <column caption='Comments Disabled' datatype='boolean' name='[comments_disabled]' role='dimension' type='nominal' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='Dislikes' datatype='integer' name='[dislikes]' role='measure' type='quantitative' />
+      <column caption='Etag' datatype='string' name='[etag]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Kind' datatype='string' name='[kind]' role='dimension' type='nominal' />
+      <column caption='Likes' datatype='integer' name='[likes]' role='measure' type='quantitative' />
+      <column caption='Publish Time' datatype='string' name='[publish_time]' role='dimension' type='nominal' />
+      <column caption='Ratings Disabled' datatype='boolean' name='[ratings_disabled]' role='dimension' type='nominal' />
+      <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+      <column caption='Region Name' datatype='string' name='[region_name]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+      <column caption='Snippet Assignable' datatype='boolean' name='[snippet_assignable]' role='dimension' type='nominal' />
+      <column caption='Snippet Channelid' datatype='string' name='[snippet_channelid]' role='dimension' type='nominal' />
+      <column caption='Snippet Title' datatype='string' name='[snippet_title]' role='dimension' type='nominal' />
+      <column caption='Tags' datatype='string' name='[tags]' role='dimension' type='nominal' />
+      <column caption='Thumbnail Link' datatype='string' name='[thumbnail_link]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Trending Date' datatype='string' datatype-customized='true' name='[trending_date]' role='dimension' type='nominal' />
+      <column caption='Video Error Or Removed' datatype='boolean' name='[video_error_or_removed]' role='dimension' type='nominal' />
+      <column caption='Video Id' datatype='string' name='[video_id]' role='dimension' type='nominal' />
+      <column caption='Views' datatype='integer' name='[views]' role='measure' type='quantitative' />
+      <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+      <column-instance column='[region_name]' derivation='None' name='[none:region_name:nk]' pivot='key' type='nominal' />
+      <column-instance column='[comment_count]' derivation='Sum' name='[sum:comment_count:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[dislikes]' derivation='Sum' name='[sum:dislikes:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[views]' derivation='Sum' name='[sum:views:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Region Name,Snippet Title)' hidden='true' name='[Action (Region Name,Snippet Title)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[region_name]' />
+          <groupfilter function='level-members' level='[snippet_title]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:region:nk]' type='palette'>
+            <map to='#ae123a'>
+              <bucket>&quot;us&quot;</bucket>
+            </map>
+            <map to='#e74545'>
+              <bucket>&quot;gb&quot;</bucket>
+            </map>
+            <map to='#fb9984'>
+              <bucket>&quot;ca&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:region_name:nk]' palette='red_gold_10_0' type='palette'>
+            <map to='#ae123a'>
+              <bucket>&quot;United States&quot;</bucket>
+            </map>
+            <map to='#e74545'>
+              <bucket>&quot;Great Britain&quot;</bucket>
+            </map>
+            <map to='#fb9984'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:region_name:nk]&#10;[:Measure Names]' type='palette'>
+            <map to='#ae123a'>
+              <multibucket>
+                <bucket>&quot;United States&quot;</bucket>
+                <bucket>&quot;[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:comment_count:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#ae123a'>
+              <multibucket>
+                <bucket>&quot;United States&quot;</bucket>
+                <bucket>&quot;[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:dislikes:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#ae123a'>
+              <multibucket>
+                <bucket>&quot;United States&quot;</bucket>
+                <bucket>&quot;[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:views:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e74545'>
+              <multibucket>
+                <bucket>&quot;Great Britain&quot;</bucket>
+                <bucket>&quot;[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:comment_count:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e74545'>
+              <multibucket>
+                <bucket>&quot;Great Britain&quot;</bucket>
+                <bucket>&quot;[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:dislikes:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e74545'>
+              <multibucket>
+                <bucket>&quot;Great Britain&quot;</bucket>
+                <bucket>&quot;[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:views:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#fb9984'>
+              <multibucket>
+                <bucket>&quot;Canada&quot;</bucket>
+                <bucket>&quot;[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:comment_count:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#fb9984'>
+              <multibucket>
+                <bucket>&quot;Canada&quot;</bucket>
+                <bucket>&quot;[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:dislikes:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#fb9984'>
+              <multibucket>
+                <bucket>&quot;Canada&quot;</bucket>
+                <bucket>&quot;[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:views:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Extract' id='Extract (Extract.Extract)_DBDFC2E152F64B2F8A8B7AF5C7F34273'>
+            <properties context=''>
+              <relation connection='hyper.0ithlu8184lvvp1av905l1pc4tpd' name='Extract' table='[Extract].[Extract]' type='table'>
+                <columns>
+                  <column datatype='string' date-parse-format='dd.yy.MM' name='trending_date' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.0hlkdbr1uetr8u166hq2k0o362ce'>
+      <datasources>
+        <datasource caption='youtube_data_visualization Extract' name='federated.0hlkdbr1uetr8u166hq2k0o362ce' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0hlkdbr1uetr8u166hq2k0o362ce'>
+        <column-instance column='[region_name]' derivation='None' name='[none:region_name:nk]' pivot='key' type='nominal' />
+        <column-instance column='[snippet_title]' derivation='None' name='[none:snippet_title:nk]' pivot='key' type='nominal' />
+        <column caption='Region Name' datatype='string' name='[region_name]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+        <column caption='Snippet Title' datatype='string' name='[snippet_title]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]'>
+        <groupfilter function='level-members' level='[none:region_name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]'>
+        <groupfilter function='level-members' level='[none:snippet_title:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_54AA71286F184C0FBC403448B86FE63C]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Total views BAN' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_286CC15ED89845348879239CE32C5E66]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Total Likes BAN' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_DCFDABF9794446FEA46CD97543B74E77]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Total Dislikes BAN' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_9037A9A4D7974D1C8B55916F54DF0183]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Total Comments BAN' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Filter 5 (generated)' name='[Action5_DEF069CD846D4B1D9BB4FF4A1711C61D]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='Total views by region' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Filter 6 (generated)' name='[Action6_22AB70930DEB4F489CD86B4331EEB61E]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='total disikes by snippet title across regions' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Filter 7 (generated)' name='[Action7_F439C5422C174D828FBB16D0D994D155]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='total likes by snippet title across regions' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+    <action caption='Filter 8 (generated)' name='[Action8_0CE8E98F2C8B46A3BE843FB1F90B8A42]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2' type='sheet' worksheet='views by category' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{96FE6CA2-F48A-4972-A64A-181C4DB0A551}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{30EBF729-06BE-43B2-AC98-795DCA23C35D}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{ABF00BF1-D437-486B-962B-6AE12348DAF7}' />
+    </worksheet>
+    <worksheet name='Total Comments BAN'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='youtube_data_visualization Extract' name='federated.0hlkdbr1uetr8u166hq2k0o362ce' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hlkdbr1uetr8u166hq2k0o362ce'>
+            <column caption='Comment Count' datatype='integer' name='[comment_count]' role='measure' type='quantitative' />
+            <column-instance column='[region_name]' derivation='None' name='[none:region_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[snippet_title]' derivation='None' name='[none:snippet_title:nk]' pivot='key' type='nominal' />
+            <column caption='Region Name' datatype='string' name='[region_name]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column caption='Snippet Title' datatype='string' name='[snippet_title]' role='dimension' type='nominal' />
+            <column-instance column='[comment_count]' derivation='Sum' name='[sum:comment_count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[Action (Region Name,Snippet Title)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_0CE8E98F2C8B46A3BE843FB1F90B8A42]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[region_name]' />
+              <groupfilter function='level-members' level='[snippet_title]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]</column>
+            <column>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]</column>
+            <column>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[Action (Region Name,Snippet Title)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:comment_count:qk]' value='n#,##0,,M;-#,##0,,M' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:comment_count:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#787878'>Total Comments : </run>
+                <run bold='true'><![CDATA[<[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:comment_count:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff' fontname='Tableau Medium' fontsize='18'>&lt;</run>
+                <run bold='true' fontcolor='#ffffff' fontname='Tableau Medium' fontsize='18'>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:comment_count:qk]</run>
+                <run bold='true' fontcolor='#ffffff' fontname='Tableau Medium' fontsize='18'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='auto' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2A25033A-1E86-486D-B059-FEF637112EDB}' />
+    </worksheet>
+    <worksheet name='Total Dislikes BAN'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='youtube_data_visualization Extract' name='federated.0hlkdbr1uetr8u166hq2k0o362ce' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hlkdbr1uetr8u166hq2k0o362ce'>
+            <column caption='Dislikes' datatype='integer' name='[dislikes]' role='measure' type='quantitative' />
+            <column-instance column='[region_name]' derivation='None' name='[none:region_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[snippet_title]' derivation='None' name='[none:snippet_title:nk]' pivot='key' type='nominal' />
+            <column caption='Region Name' datatype='string' name='[region_name]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column caption='Snippet Title' datatype='string' name='[snippet_title]' role='dimension' type='nominal' />
+            <column-instance column='[dislikes]' derivation='Sum' name='[sum:dislikes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[Action (Region Name,Snippet Title)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_0CE8E98F2C8B46A3BE843FB1F90B8A42]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[region_name]' />
+              <groupfilter function='level-members' level='[snippet_title]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]</column>
+            <column>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]</column>
+            <column>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[Action (Region Name,Snippet Title)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:dislikes:qk]' value='n#,##0,,M;-#,##0,,M' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:dislikes:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#787878'>Total Dislikes : </run>
+                <run bold='true'><![CDATA[<[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:dislikes:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff' fontname='Tableau Medium' fontsize='18'>&lt;</run>
+                <run bold='true' fontcolor='#ffffff' fontname='Tableau Medium' fontsize='18'>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:dislikes:qk]</run>
+                <run bold='true' fontcolor='#ffffff' fontname='Tableau Medium' fontsize='18'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='auto' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0527BC06-6C8C-40BB-8EB8-F9E5371D48F7}' />
+    </worksheet>
+    <worksheet name='Total Likes BAN'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='youtube_data_visualization Extract' name='federated.0hlkdbr1uetr8u166hq2k0o362ce' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hlkdbr1uetr8u166hq2k0o362ce'>
+            <column caption='Likes' datatype='integer' name='[likes]' role='measure' type='quantitative' />
+            <column-instance column='[region_name]' derivation='None' name='[none:region_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[snippet_title]' derivation='None' name='[none:snippet_title:nk]' pivot='key' type='nominal' />
+            <column caption='Region Name' datatype='string' name='[region_name]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column caption='Snippet Title' datatype='string' name='[snippet_title]' role='dimension' type='nominal' />
+            <column-instance column='[likes]' derivation='Sum' name='[sum:likes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[Action (Region Name,Snippet Title)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_0CE8E98F2C8B46A3BE843FB1F90B8A42]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[region_name]' />
+              <groupfilter function='level-members' level='[snippet_title]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]</column>
+            <column>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]</column>
+            <column>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[Action (Region Name,Snippet Title)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:likes:qk]' value='n#,##0,,M;-#,##0,,M' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:likes:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#787878'>Total Likes : </run>
+                <run bold='true'><![CDATA[<[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:likes:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff' fontname='Tableau Medium' fontsize='18'>&lt;</run>
+                <run bold='true' fontcolor='#ffffff' fontname='Tableau Medium' fontsize='18'>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:likes:qk]</run>
+                <run bold='true' fontcolor='#ffffff' fontname='Tableau Medium' fontsize='18'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D4EA6EFC-7D72-4AF3-8EFD-72B710686601}' />
+    </worksheet>
+    <worksheet name='Total views BAN'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='youtube_data_visualization Extract' name='federated.0hlkdbr1uetr8u166hq2k0o362ce' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hlkdbr1uetr8u166hq2k0o362ce'>
+            <column-instance column='[region_name]' derivation='None' name='[none:region_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[snippet_title]' derivation='None' name='[none:snippet_title:nk]' pivot='key' type='nominal' />
+            <column caption='Region Name' datatype='string' name='[region_name]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column caption='Snippet Title' datatype='string' name='[snippet_title]' role='dimension' type='nominal' />
+            <column-instance column='[views]' derivation='Sum' name='[sum:views:qk]' pivot='key' type='quantitative' />
+            <column caption='Views' datatype='integer' name='[views]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[Action (Region Name,Snippet Title)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_0CE8E98F2C8B46A3BE843FB1F90B8A42]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[region_name]' />
+              <groupfilter function='level-members' level='[snippet_title]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]</column>
+            <column>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]</column>
+            <column>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[Action (Region Name,Snippet Title)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:views:qk]' value='n#,##0,,,B;(#,##0,,,B)' />
+            <format attr='color' data-class='subtotal' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#f5f5f5' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:views:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#787878'>Total Views:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:views:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff' fontname='Tableau Medium' fontsize='18'>&lt;</run>
+                <run bold='true' fontcolor='#ffffff' fontname='Tableau Medium' fontsize='18'>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:views:qk]</run>
+                <run bold='true' fontcolor='#ffffff' fontname='Tableau Medium' fontsize='18'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6B224994-33DC-4C9C-8A84-6E99C6C15ABC}' />
+    </worksheet>
+    <worksheet name='Total views by region'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='youtube_data_visualization Extract' name='federated.0hlkdbr1uetr8u166hq2k0o362ce' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0hlkdbr1uetr8u166hq2k0o362ce'>
+            <column caption='Comment Count' datatype='integer' name='[comment_count]' role='measure' type='quantitative' />
+            <column-instance column='[region_name]' derivation='None' name='[none:region_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[snippet_title]' derivation='None' name='[none:snippet_title:nk]' pivot='key' type='nominal' />
+            <column caption='Region Name' datatype='string' name='[region_name]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column caption='Snippet Title' datatype='string' name='[snippet_title]' role='dimension' type='nominal' />
+            <column-instance column='[comment_count]' derivation='Sum' name='[sum:comment_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[views]' derivation='Sum' name='[sum:views:qk]' pivot='key' type='quantitative' />
+            <column caption='Views' datatype='integer' name='[views]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[Action (Region Name,Snippet Title)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_0CE8E98F2C8B46A3BE843FB1F90B8A42]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[region_name]' />
+              <groupfilter function='level-members' level='[snippet_title]' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:views:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]</column>
+            <column>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]</column>
+            <column>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[Action (Region Name,Snippet Title)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:views:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='0' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:comment_count:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:comment_count:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-width' value='0' />
+            <format attr='text-format' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:comment_count:qk]' value='n#,##0,,M;-#,##0,,M' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]' value='false' />
+            <format attr='color' scope='rows' value='#ffffff' />
+            <format attr='font-weight' scope='rows' value='bold' />
+            <format attr='text-format' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:views:qk]' value='n#,##0,,,B' />
+            <format attr='text-format' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:comment_count:qk]' value='n#,##0,,M;-#,##0,,M' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-color' value='#898989' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]' />
+              <color column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:views:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]' />
+              <color column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#787878'>Region : </run>
+                <run bold='true'><![CDATA[<[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#787878'>Total Views : </run>
+                <run bold='true'><![CDATA[<[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:views:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='190' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:comment_count:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]' />
+              <color column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#787878'>Region : </run>
+                <run bold='true'><![CDATA[<[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#787878'>Total Comments : </run>
+                <run bold='true'><![CDATA[<[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:comment_count:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:views:qk] + [federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:comment_count:qk])</rows>
+        <cols>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]</cols>
+      </table>
+      <simple-id uuid='{45418ADF-DB0C-4918-9356-CE28D2C7A774}' />
+    </worksheet>
+    <worksheet name='total disikes by snippet title across regions'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='youtube_data_visualization Extract' name='federated.0hlkdbr1uetr8u166hq2k0o362ce' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hlkdbr1uetr8u166hq2k0o362ce'>
+            <column caption='Dislikes' datatype='integer' name='[dislikes]' role='measure' type='quantitative' />
+            <column-instance column='[region_name]' derivation='None' name='[none:region_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[snippet_title]' derivation='None' name='[none:snippet_title:nk]' pivot='key' type='nominal' />
+            <column caption='Region Name' datatype='string' name='[region_name]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column caption='Snippet Title' datatype='string' name='[snippet_title]' role='dimension' type='nominal' />
+            <column-instance column='[dislikes]' derivation='Sum' name='[sum:dislikes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[Action (Region Name,Snippet Title)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_0CE8E98F2C8B46A3BE843FB1F90B8A42]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[region_name]' />
+              <groupfilter function='level-members' level='[snippet_title]' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:dislikes:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]</column>
+            <column>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]</column>
+            <column>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[Action (Region Name,Snippet Title)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:dislikes:qk]' scope='cols' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-weight' data-class='subtotal' scope='rows' value='normal' />
+            <format attr='color' data-class='subtotal' scope='rows' value='#333333' />
+            <format attr='color' data-class='total' scope='rows' value='#1b1b1b' />
+            <format attr='font-weight' data-class='total' scope='rows' value='bold' />
+            <format attr='font-size' data-class='subtotal' value='9' />
+            <format attr='font-size' data-class='subtotal' scope='rows' value='9' />
+            <format attr='font-size' data-class='total' scope='rows' value='9' />
+            <format attr='font-size' data-class='total' scope='cols' value='9' />
+            <format attr='font-size' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]' value='9' />
+            <format attr='text-format' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:dislikes:qk]' value='n#,##0,K;-#,##0,K' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='10' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='font-size' data-class='subtotal' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]' value='9' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='wrap' value='off' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]' value='center' />
+            <format attr='color' scope='cols' value='#f5f5f5' />
+            <format attr='color' scope='rows' value='#ffffff' />
+            <format attr='font-family' scope='rows' value='Sitka Subheading Semibold' />
+            <format attr='font-weight' scope='rows' value='bold' />
+            <format attr='text-decoration' scope='rows' value='none' />
+            <format attr='font-size' scope='rows' value='9' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='band-size' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]' value='Region Name'>
+              <formatted-text>
+                <run fontname='Tableau Medium' fontsize='10'>Region Name</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]' value='Category'>
+              <formatted-text>
+                <run fontname='Tableau Medium' fontsize='10'>Category</run>
+              </formatted-text>
+            </format>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-family' value='Tableau Book' />
+            <format attr='font-weight' value='bold' />
+            <format attr='border-color' value='#333333' />
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]' />
+              <color column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#787878'>Region : </run>
+                <run bold='true'><![CDATA[<[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#787878'>Snippet Title Category : </run>
+                <run bold='true'><![CDATA[<[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#787878'>Total Dislikes : </run>
+                <run bold='true'><![CDATA[<[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:dislikes:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='216' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]</rows>
+        <cols>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:dislikes:qk]</cols>
+      </table>
+      <simple-id uuid='{5B5828B8-7CD9-4674-9D03-753B5374DCF7}' />
+    </worksheet>
+    <worksheet name='total likes by snippet title across regions'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='youtube_data_visualization Extract' name='federated.0hlkdbr1uetr8u166hq2k0o362ce' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hlkdbr1uetr8u166hq2k0o362ce'>
+            <column caption='Likes' datatype='integer' name='[likes]' role='measure' type='quantitative' />
+            <column-instance column='[region_name]' derivation='None' name='[none:region_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[snippet_title]' derivation='None' name='[none:snippet_title:nk]' pivot='key' type='nominal' />
+            <column caption='Region Name' datatype='string' name='[region_name]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column caption='Snippet Title' datatype='string' name='[snippet_title]' role='dimension' type='nominal' />
+            <column-instance column='[likes]' derivation='Sum' name='[sum:likes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[Action (Region Name,Snippet Title)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action8_0CE8E98F2C8B46A3BE843FB1F90B8A42]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[region_name]' />
+              <groupfilter function='level-members' level='[snippet_title]' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;People &amp; Blogs&quot;</bucket>
+              <bucket>&quot;Entertainment&quot;</bucket>
+              <bucket>&quot;Music&quot;</bucket>
+              <bucket>&quot;Science &amp; Technology&quot;</bucket>
+              <bucket>&quot;Film &amp; Animation&quot;</bucket>
+              <bucket>&quot;Comedy&quot;</bucket>
+              <bucket>&quot;News &amp; Politics&quot;</bucket>
+              <bucket>&quot;Gaming&quot;</bucket>
+              <bucket>&quot;Sports&quot;</bucket>
+              <bucket>&quot;Howto &amp; Style&quot;</bucket>
+              <bucket>&quot;Pets &amp; Animals&quot;</bucket>
+              <bucket>&quot;Travel &amp; Events&quot;</bucket>
+              <bucket>&quot;Education&quot;</bucket>
+              <bucket>&quot;Autos &amp; Vehicles&quot;</bucket>
+              <bucket>&quot;Shows&quot;</bucket>
+              <bucket>&quot;Nonprofits &amp; Activism&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]</column>
+            <column>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]</column>
+            <column>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[Action (Region Name,Snippet Title)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:likes:qk]' field-type='quantitative' reverse='true' scope='cols' type='space' />
+            <format attr='auto-subtitle' class='0' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:likes:qk]' scope='cols' value='true' />
+            <format attr='display' class='0' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:likes:qk]' scope='cols' value='false' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:likes:qk]' value='n#,##0,,M;-#,##0,,M' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]' value='false' />
+            <format attr='text-format' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:likes:qk]' value='n#,##0,,.00M;-#,##0,,.00M' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#787878'>Region : </run>
+                <run bold='true'><![CDATA[<[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#787878'>Snippet Title  Category: </run>
+                <run bold='true'><![CDATA[<[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#787878'>Total Likes : </run>
+                <run bold='true'><![CDATA[<[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:likes:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-transparency' value='216' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]</rows>
+        <cols>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:likes:qk]</cols>
+      </table>
+      <simple-id uuid='{37C542D1-227F-4616-A0BC-20F154DE4B0D}' />
+    </worksheet>
+    <worksheet name='views by category'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='youtube_data_visualization Extract' name='federated.0hlkdbr1uetr8u166hq2k0o362ce' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hlkdbr1uetr8u166hq2k0o362ce'>
+            <column-instance column='[region_name]' derivation='None' name='[none:region_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[snippet_title]' derivation='None' name='[none:snippet_title:nk]' pivot='key' type='nominal' />
+            <column caption='Region Name' datatype='string' name='[region_name]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column caption='Snippet Title' datatype='string' name='[snippet_title]' role='dimension' type='nominal' />
+            <column-instance column='[views]' derivation='Sum' name='[sum:views:qk]' pivot='key' type='quantitative' />
+            <column caption='Views' datatype='integer' name='[views]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:views:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]</column>
+            <column>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:views:qk]' scope='rows' value='false' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='cols' value='#ffffff' />
+            <format attr='text-decoration' scope='cols' value='none' />
+            <format attr='text-orientation' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]' value='-90' />
+            <format attr='font-family' scope='cols' value='Sitka Subheading Semibold' />
+            <format attr='font-weight' scope='cols' value='normal' />
+            <format attr='font-size' scope='cols' value='9' />
+            <format attr='text-format' field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:views:qk]' value='n#,##0,,M;-#,##0,,M' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#787878'>Region : </run>
+                <run bold='true'><![CDATA[<[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#787878'>Snippet Title Category : </run>
+                <run bold='true'><![CDATA[<[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#787878'>Total Views : </run>
+                <run bold='true'><![CDATA[<[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:views:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='216' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[sum:views:qk]</rows>
+        <cols>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]</cols>
+      </table>
+      <simple-id uuid='{3707E858-E7BE-42EA-AAD8-AEBC39848BFC}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='1200' maxwidth='1000' minheight='1200' minwidth='1000' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='youtube_data_visualization Extract' name='federated.0hlkdbr1uetr8u166hq2k0o362ce' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0hlkdbr1uetr8u166hq2k0o362ce'>
+        <column-instance column='[region_name]' derivation='None' name='[none:region_name:nk]' pivot='key' type='nominal' />
+        <column-instance column='[snippet_title]' derivation='None' name='[none:snippet_title:nk]' pivot='key' type='nominal' />
+        <column caption='Region Name' datatype='string' name='[region_name]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+        <column caption='Snippet Title' datatype='string' name='[snippet_title]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='92333' id='9' param='vert' type-v2='layout-flow' w='14000' x='85200' y='7000'>
+            <zone fixed-size='72' forceUpdate='true' h='6667' id='40' is-fixed='true' type-v2='text' w='14000' x='85200' y='7000'>
+              <formatted-text>
+                <run bold='true' fontcolor='#fb9984' fontname='Tableau Semibold' fontsize='8'> ⬤  CANADA</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#e74545' fontname='Tableau Semibold' fontsize='8'> ⬤  GREAT BRITAIN</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#ae123a' fontname='Tableau Semibold' fontsize='8'> ⬤  UNITED STATES</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='margin-right' value='4' />
+                <format attr='padding' value='0' />
+              </zone-style>
+            </zone>
+            <zone h='85666' id='17' name='Total views by region' show-title='false' w='14000' x='85200' y='13667'>
+              <layout-cache cell-count-w='3' minheight='100' type-h='scalable' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='5' />
+                <format attr='margin-top' value='8' />
+                <format attr='margin-right' value='16' />
+                <format attr='margin-bottom' value='15' />
+                <format attr='margin-left' value='8' />
+                <format attr='padding' value='10' />
+                <format attr='background-color' value='#333333' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='12500' id='11' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='84400' x='800' y='7000'>
+            <zone h='11666' id='16' name='Total views BAN' show-title='false' w='20800' x='1800' y='7417'>
+              <layout-cache cell-count-h='1' cell-count-w='1' non-cell-size-h='49' type-h='cell' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='margin-right' value='8' />
+                <format attr='margin-left' value='7' />
+                <format attr='background-color' value='#333333' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='220' h='11666' id='25' is-fixed='true' name='Total Likes BAN' show-title='false' w='20700' x='22600' y='7417'>
+              <layout-cache type-h='fixed' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='margin-right' value='8' />
+                <format attr='margin-left' value='8' />
+                <format attr='background-color' value='#333333' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='153' h='11666' id='26' is-fixed='true' name='Total Dislikes BAN' show-title='false' w='20700' x='43300' y='7417'>
+              <layout-cache type-h='fixed' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='margin-right' value='8' />
+                <format attr='margin-left' value='8' />
+                <format attr='background-color' value='#333333' />
+              </zone-style>
+            </zone>
+            <zone h='11666' id='27' name='Total Comments BAN' show-title='false' w='20700' x='64000' y='7417'>
+              <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='margin-left' value='8' />
+                <format attr='background-color' value='#333333' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='5' />
+              <format attr='margin-left' value='10' />
+              <format attr='padding' value='0' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='6333' id='33' type-v2='text' w='98400' x='800' y='667'>
+            <formatted-text>
+              <run bold='true' fontcolor='#ffffff' fontname='Yu Gothic UI Semibold' fontsize='18'>YOUTUBE DATA METRICS</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='margin-top' value='15' />
+              <format attr='margin-right' value='16' />
+              <format attr='margin-left' value='16' />
+              <format attr='padding' value='8' />
+              <format attr='background-color' value='#333333' />
+            </zone-style>
+          </zone>
+          <zone h='38916' id='37' param='vert' type-v2='layout-flow' w='84400' x='800' y='19500'>
+            <zone fixed-size='29' forceUpdate='true' h='3084' id='36' is-fixed='true' type-v2='text' w='80400' x='3200' y='20834'>
+              <formatted-text>
+                <run fontalignment='1' fontcolor='#ffffff' fontname='Sitka Subheading Semibold' fontsize='10'># Views based on Video Categories</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#333333' />
+              </zone-style>
+            </zone>
+            <zone h='32581' id='28' name='views by category' show-title='false' w='80400' x='3200' y='23918'>
+              <layout-cache minheight='220' type-h='scalable' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#333333' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='7' />
+              <format attr='margin-top' value='8' />
+              <format attr='margin-right' value='8' />
+              <format attr='margin-bottom' value='15' />
+              <format attr='margin-left' value='16' />
+              <format attr='padding' value='8' />
+              <format attr='background-color' value='#333333' />
+            </zone-style>
+          </zone>
+          <zone h='40917' id='38' param='vert' type-v2='layout-flow' w='84400' x='800' y='58416'>
+            <zone fixed-size='27' forceUpdate='true' h='2917' id='35' is-fixed='true' type-v2='text' w='80400' x='3200' y='59083'>
+              <formatted-text>
+                <run fontalignment='1' fontcolor='#ffffff' fontname='Sitka Subheading Semibold' fontsize='10'># LIkes &amp; Dislikes based on Video Categories</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#333333' />
+              </zone-style>
+            </zone>
+            <zone h='35328' id='39' param='horz' type-v2='layout-flow' w='80400' x='3200' y='62000'>
+              <zone h='35328' id='23' name='total likes by snippet title across regions' show-title='false' w='32200' x='3200' y='62000'>
+                <layout-cache minwidth='100' type-h='cell' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='margin-right' value='0' />
+                  <format attr='padding-top' value='0' />
+                  <format attr='padding-right' value='0' />
+                  <format attr='padding-left' value='0' />
+                  <format attr='background-color' value='#333333' />
+                </zone-style>
+              </zone>
+              <zone h='35328' id='22' name='total disikes by snippet title across regions' show-title='false' w='48200' x='35400' y='62000'>
+                <layout-cache minwidth='260' type-h='cell' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='margin-right' value='0' />
+                  <format attr='margin-bottom' value='4' />
+                  <format attr='margin-left' value='0' />
+                  <format attr='padding-right' value='0' />
+                  <format attr='background-color' value='#333333' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='7' />
+              <format attr='margin-top' value='0' />
+              <format attr='margin-right' value='8' />
+              <format attr='margin-bottom' value='16' />
+              <format attr='margin-left' value='16' />
+              <format attr='padding' value='8' />
+              <format attr='background-color' value='#333333' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+            <format attr='background-color' value='#000000' />
+          </zone-style>
+        </zone>
+        <zone h='4000' id='21' type-v2='dashboard-object' w='5300' x='90700' y='2167'>
+          <button action='' active-visual-state-index='1'>
+            <toggle-action>tabdoc:toggle-button-click-action window-id=&quot;{0EFE2F5A-5E3C-422B-85CD-0610F2805183}&quot; zone-id=&quot;21&quot; zone-ids=[19]</toggle-action>
+            <button-visual-state>
+              <image-path>C:/Users/ravis/Downloads/delete (1).png</image-path>
+              <tooltip-text>Close filter</tooltip-text>
+            </button-visual-state>
+            <button-visual-state>
+              <image-path>C:/Users/ravis/Downloads/filter (2).png</image-path>
+              <tooltip-text>Filter by region and video category</tooltip-text>
+            </button-visual-state>
+          </button>
+        </zone>
+        <zone forceUpdate='true' h='3000' id='29' type-v2='text' w='11200' x='5600' y='8667'>
+          <formatted-text>
+            <run fontcolor='#f5f5f5' fontname='Sitka Subheading Semibold' fontsize='10'># Total Views</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='3000' id='30' type-v2='text' w='11200' x='26900' y='8417'>
+          <formatted-text>
+            <run fontcolor='#f5f5f5' fontname='Sitka Subheading Semibold' fontsize='10'># Total Likes</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='3000' id='31' type-v2='text' w='12500' x='46500' y='8583'>
+          <formatted-text>
+            <run fontcolor='#ffffff' fontname='Sitka Subheading Semibold' fontsize='10'># Total Dislikes</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='3000' id='32' type-v2='text' w='14400' x='66100' y='8667'>
+          <formatted-text>
+            <run fontcolor='#f5f5f5' fontname='Sitka Subheading Semibold' fontsize='10'># Total Comments</run>
+          </formatted-text>
+        </zone>
+        <zone h='26250' hidden-by-user='true' id='19' param='vert' type-v2='layout-flow' w='26600' x='71500' y='7417'>
+          <zone fixed-size='136' h='12666' hidden-by-user='true' id='44' is-fixed='true' name='total disikes by snippet title across regions' param='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]' type-v2='filter' values='database' w='24400' x='72600' y='8334'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='margin' value='8' />
+              <format attr='padding' value='8' />
+            </zone-style>
+          </zone>
+          <zone fixed-size='77' h='7750' hidden-by-user='true' id='43' is-fixed='true' mode='checkdropdown' name='total disikes by snippet title across regions' param='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]' type-v2='filter' values='database' w='24400' x='72600' y='21000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='margin' value='8' />
+              <format attr='padding' value='8' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#1b1b1b' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='margin' value='5' />
+            <format attr='padding' value='5' />
+            <format attr='background-color' value='#555555' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2400' minheight='2400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='56' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98666' id='55' param='vert' type-v2='layout-flow' w='98400' x='800' y='667'>
+                <zone forceUpdate='true' h='6333' id='33' type-v2='text' w='98400' x='800' y='667'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#ffffff' fontname='Yu Gothic UI Semibold' fontsize='18'>YOUTUBE DATA METRICS</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#333333' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='72' forceUpdate='true' h='6667' id='40' type-v2='text' w='14000' x='85200' y='7000'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#fb9984' fontname='Tableau Semibold' fontsize='8'> ⬤  CANADA</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#e74545' fontname='Tableau Semibold' fontsize='8'> ⬤  GREAT BRITAIN</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#ae123a' fontname='Tableau Semibold' fontsize='8'> ⬤  UNITED STATES</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='132' h='11666' id='16' is-fixed='true' name='Total views BAN' show-title='false' w='20800' x='1800' y='7417'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' non-cell-size-h='49' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#333333' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='132' h='11666' id='25' is-fixed='true' name='Total Likes BAN' show-title='false' w='20700' x='22600' y='7417'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#333333' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='132' h='11666' id='26' is-fixed='true' name='Total Dislikes BAN' show-title='false' w='20700' x='43300' y='7417'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#333333' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='132' h='11666' id='27' is-fixed='true' name='Total Comments BAN' show-title='false' w='20700' x='64000' y='7417'>
+                  <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#333333' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='3000' id='30' type-v2='text' w='11200' x='26900' y='8417'>
+                  <formatted-text>
+                    <run fontcolor='#f5f5f5' fontname='Sitka Subheading Semibold' fontsize='10'># Total Likes</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='3000' id='31' type-v2='text' w='12500' x='46500' y='8583'>
+                  <formatted-text>
+                    <run fontcolor='#ffffff' fontname='Sitka Subheading Semibold' fontsize='10'># Total Dislikes</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='3000' id='29' type-v2='text' w='11200' x='5600' y='8667'>
+                  <formatted-text>
+                    <run fontcolor='#f5f5f5' fontname='Sitka Subheading Semibold' fontsize='10'># Total Views</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='3000' id='32' type-v2='text' w='14400' x='66100' y='8667'>
+                  <formatted-text>
+                    <run fontcolor='#f5f5f5' fontname='Sitka Subheading Semibold' fontsize='10'># Total Comments</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='85666' id='17' is-fixed='true' name='Total views by region' show-title='false' w='14000' x='85200' y='13667'>
+                  <layout-cache cell-count-w='3' minheight='100' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#333333' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='29' forceUpdate='true' h='3084' id='36' type-v2='text' w='80400' x='3200' y='20834'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#ffffff' fontname='Sitka Subheading Semibold' fontsize='10'># Views based on Video Categories</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#333333' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='32581' id='28' is-fixed='true' name='views by category' show-title='false' w='80400' x='3200' y='23918'>
+                  <layout-cache minheight='220' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#333333' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='27' forceUpdate='true' h='2917' id='35' type-v2='text' w='80400' x='3200' y='59083'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#ffffff' fontname='Sitka Subheading Semibold' fontsize='10'># LIkes &amp; Dislikes based on Video Categories</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#333333' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='35328' id='23' is-fixed='true' name='total likes by snippet title across regions' show-title='false' w='32200' x='3200' y='62000'>
+                  <layout-cache minwidth='100' type-h='cell' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#333333' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='136' h='12666' hidden-by-user='true' id='44' mode='checkdropdown' name='total disikes by snippet title across regions' param='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]' type-v2='filter' values='database' w='24400' x='72600' y='8334'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='77' h='7750' hidden-by-user='true' id='43' mode='checkdropdown' name='total disikes by snippet title across regions' param='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]' type-v2='filter' values='database' w='24400' x='72600' y='21000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='35328' id='22' is-fixed='true' name='total disikes by snippet title across regions' show-title='false' w='48200' x='35400' y='62000'>
+                  <layout-cache minwidth='260' type-h='cell' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#333333' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+                <format attr='background-color' value='#000000' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{90BBD43C-F7D1-4211-A1BE-CB4EDBF76820}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.19792' source-height='33'>
+    <window class='worksheet' name='Total views by region'>
+      <cards>
+        <edge name='left'>
+          <strip size='159'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='159'>
+            <card param='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]' type='filter' />
+            <card pane-specification-id='3' param='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]&#10;[federated.0hlkdbr1uetr8u166hq2k0o362ce].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[:Measure Names]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[mn:Calculation_878764917410414593:ok]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:Calculation_878764917410414593:ok]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:trending_date:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[qr:Calculation_878764917410414593:ok]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[yr:Calculation_878764917410414593:ok]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[yr:Calculation_878764917410414593:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9709C5F1-A0C9-452C-A978-E30FD9ABAEA8}' />
+    </window>
+    <window class='worksheet' name='total likes by snippet title across regions'>
+      <cards>
+        <edge name='left'>
+          <strip size='159'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='159'>
+            <card pane-specification-id='2' param='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[:Measure Names]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:channel_title:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:etag:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:kind:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:ratings_disabled:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_assignable:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_channelid:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:tags:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:video_error_or_removed:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B797B3C6-C908-4FEB-B446-8473356639EC}' />
+    </window>
+    <window class='worksheet' name='total disikes by snippet title across regions'>
+      <cards>
+        <edge name='left'>
+          <strip size='158'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='158'>
+            <card pane-specification-id='6' param='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]&#10;[federated.0hlkdbr1uetr8u166hq2k0o362ce].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[:Measure Names]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:channel_title:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:etag:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:kind:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:ratings_disabled:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_assignable:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_channelid:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:tags:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:video_error_or_removed:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D1AAC49C-7490-4FC6-8024-4B501ABE545C}' />
+    </window>
+    <window class='worksheet' name='Total views BAN'>
+      <cards>
+        <edge name='left'>
+          <strip size='159'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:Calculation_878764917410414593:qk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:title:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[yr:Calculation_878764917410414593:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5CAF5D79-50B6-4422-B710-575B758B9AF5}' />
+    </window>
+    <window class='worksheet' name='Total Comments BAN'>
+      <cards>
+        <edge name='left'>
+          <strip size='158'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:Calculation_878764917410414593:qk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:title:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[yr:Calculation_878764917410414593:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{880BBB3F-2195-4D38-956C-F3CD3C76A827}' />
+    </window>
+    <window class='worksheet' name='Total Dislikes BAN'>
+      <cards>
+        <edge name='left'>
+          <strip size='158'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:Calculation_878764917410414593:qk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:title:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[yr:Calculation_878764917410414593:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5C6B5219-01AE-4335-8E69-1BDBFD15A4EA}' />
+    </window>
+    <window class='worksheet' name='Total Likes BAN'>
+      <cards>
+        <edge name='left'>
+          <strip size='158'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:Calculation_878764917410414593:qk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:title:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[yr:Calculation_878764917410414593:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{84103FD9-D779-485A-91CA-1CBF273F0FCF}' />
+    </window>
+    <window class='worksheet' name='views by category'>
+      <cards>
+        <edge name='left'>
+          <strip size='159'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='159'>
+            <card param='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:publish_time:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:snippet_title:nk]</field>
+            <field>[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:video_error_or_removed:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{29809548-FB03-44CA-BB31-36C61B236F90}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='159'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3DC10BBD-F7D6-4BDB-83D1-A1B74E79121E}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='159'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9608227B-EBFC-4F1D-A72F-FEC0283759FF}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='159'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7545D844-EE81-4CC8-B75C-FD2B5D4102B9}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Total Comments BAN'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Dislikes BAN'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Likes BAN'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total views BAN'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total views by region'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]&#10;[federated.0hlkdbr1uetr8u166hq2k0o362ce].[:Measure Names]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='total disikes by snippet title across regions'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='total likes by snippet title across regions'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0hlkdbr1uetr8u166hq2k0o362ce].[none:region_name:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='views by category'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{0EFE2F5A-5E3C-422B-85CD-0610F2805183}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABGvAAARrwH3/UuE
+      AAAgAElEQVR4nO2deXgU553nP1V9X5JarfuWkIRAIA6BOY0hmMsGbOPYxhjfGTyTTTyZzexM
+      kslu7J2Jk+yzmcQTZyeZZOPJ7Dh2Yu9jZ5x4ncQnBiMw4pRAQgIJ3XdL3a2+u2r/aCSbQ6ha
+      N6g+z9OPVN1vVf2q6v3W+3vf9/e+ryDLsoyKyixFnG4DVFSmE+3QP4IgTKcdKirTgloCqMxq
+      VAGozGq0I/1gtVqn0g4VlWlhRAHMnTt3Ku1QUZkWVBdIZVajCkBlVqMKQGVWM2IdYAhBH8fe
+      +zbz0kuvIRvi2b3jVl5+7XcUzFvMbauX4e5p5fdv/QFfSMP992/nN795HYB79uzhZMVJbr99
+      zfCxKg++Q07pMn73m98QArbes4fDb/+K8o33UZBhZ6CnnTf+43ekzilj620rADj84ducrG0C
+      YOX6rZQV5xD0ezn00fvUNrQCYErMYO9d6/nXF39FSGfjiccfHL6w7qZzvP72B6TkzGXrimL+
+      7dU3L7u+tbdvxxLq4g8fHgFg7qIVlBfY+dXrH/LIvocxAs62CzixU5Bhv7SXn9+/eYA7d9yO
+      LEkcr/iAo1X1rN96D7WH36bd6WNu2S2svaUMb28rL7/+/1i65nMsnT+HxrPHeefA0TE+LpWJ
+      ZtQSQA66yF68hfVL89m48wEcBon5Kzbz7a/9BXVnTqFLLuGfvvN1QMcDD+wa3m/XnocI93ZQ
+      UVHB5h07OF5RQUtHL7seeADdpTTbdu0h0QSbdtxP85kKssrWs3fnBnLnLiLHrqWiooK2Lufw
+      MVdu2Iav8zw151v427//AbctKQRgw7Zd3LHzPtYszoVIgCMVFaQWLSXibOZ0zXkAdj7wCPc8
+      uJe5qZe3bq3dtIO/evovMGmi23sf+wvu27UNMLFr+zoqKio4eeYc586cpNOnZUGOnYqKo1gz
+      5rC0KJVPjlfxje/9kGRj1I6MRBPr73qMv3nqPmqqTtHldFN8yxb+6uFtHD1yhD63b+xPS2XC
+      UeQC/eJnP2P3w1/gvm0r+D+vvc3OXZ/nZ89/lwOHjvDyz39AJHs1+farCxPPQC+nTp3CFwxS
+      feoUnb0DI55Dq9NjNYhU19YDoBE16HQ6goHAZeka62uoOPgBz//8ZbZv2wQIbNu4gu/94Kds
+      27oNpCBVl87VdOEc9Y3NoLGwbmEKP/rXt9i29XNXnftoTSufWzmfhOwyRHcL0tAPgoBOpyMc
+      Dl06VgvOnnZOnTpDeOgGajT4Xb14Q58e75FH7uNbX/sGByuO8O4HB/AM9GGKT8EoBDh2slrJ
+      LVeZIhQJoOPcEZrlDE698xoDAQmL2YLX6x3+3ecLodNdEUqhKMZOZihV8byFaDQCJcXRt3pS
+      ejZlZWXYzIZr7hkKhhA1IslzlpGudRHyD7Lwti3YdFenXbB6I4Hednyefm7fdsdVF/3Wb3/L
+      th072X73Tt76j98Of681WikrKyM3M/WaNiSmZvHoF/bx+v/+EYORoW91xFtF3IOfKqKt9hO+
+      +q1/ZNeTf83ffXGPgvuiMlUorgRfbGqiuTnqix88eID7d+/BqNMwt3w9GUIL57vcuOQEFuWn
+      kZRVgs3bSf81jtPlkrllUT62pCyybV46LiV645UXee13H7B0ySIAqo8e4MUXX6Slx33VMUy2
+      RPY+eDd/+MO7bLljG/XnL1JWWsi5JjcbVy+6Kv22bXfQ2NxOSW4inVIyy4tTLvt9oLWaAXMB
+      nytJpOJM2/D3gf4OXnzxRd4/dOKa96ThTCX/5at/w737/jOJpqESMMTBI+d5/NFd6DQCdrud
+      tKxc+ltr+NYz32Xd5ttHudMqU8moleAhOloa8fQPAvD2r3+G5eEn+Md/eoG+jov8l7/5JhEk
+      nvv75/jzr/wdOsnPt//7t4ddibNVVQy9IH/43N/zpT//Cp/XSTz/7f+OV4ILtdU89bX/gRz2
+      8cMXnseSt4zirXfxwi2befeNf+f1dyoAaGmsZ/cXv849Xg+/f/nHvHuklr/ZbuaH/+PbdHgi
+      FBw7xx2L58CHJ2lruoDT7QONBbvYzbM/+GcCMlRd7KOweB6Hz3UB0HShlsFAhFdffYNim5tI
+      JEDV2XogTGOvxAsvvICno46v/cPzDPb30NjiB8DndnKhyUDQ3cnPXnqLDbcup7H+LG5fmBe+
+      +02+8NSf86Mf/zNdDaf4+W8r+Ov//FfohAjf++7zE/LgVCYGYWg8wJXRoOXl5dNikIrKVKL2
+      A6jMalQBqMxqVAGozGpGrAOoqMwG1BJAZVajCkBlVjNiP0BWVhZms3kqbZlQent76e3tHd52
+      OBw4HI5ptGh8NDc34/N9Gkd0oz+fc+fOXbZdXFw8LXaMKACz2YzNZptKWyYUt/vyHmS9Xn9D
+      X49Go7ls+0Z/PlcyXdeiukAqsxpVACqzGlUAKrOaKROA0ZpAenLiVd/PxO6H/PkLsWogMbuY
+      e+65j7vuuou0S+NokrIKSbJdqjoJOp568gkAVt5+N6V5Dkz2DBYvKOHJR3ZPk/WXTBNFBEBv
+      jqe8vJzy8nKM16rxCTrWro6OvsvKK2LpkkWY9RpycnKGk6xduwZ7Sga5c4qZX5A+NRcQC4KO
+      grysMe2qOBr0WmQUL+GWPBu/f2c/RQuWsm3LRk4cOcjJ2ibMYpDFqzZw8pOD2OLt1J1tY+OO
+      Fbz06rv89V/+Bf/25gGW5Sfi6mrg4oCAz+XEYtQwMBjAZrMRRovk7aOj51pB1ZPH8o272LNl
+      CT/9cSc1F89Rk12Iof0QK7c9iM5gxmwy0FX1Prai2zAHWvF4gwCIehNS0Et8aiH5yQESshaw
+      Zd1yildsQuNuI2zLofbQW/xpCoZDZhXMZ/eDu/jdiz+mNWhAF5eJOFDHvNJS7IlJiAl5GLuP
+      0iOkMdjdQGHhfA58fJj8slV4zvyRp556iub2DkS9mSyHhcKiOfi0dnzOdpbPLQLhNPEZc+jr
+      bCYpLZuW2uNc7JzY52RLcLBmw3pOvvt7AvE5bNv4OfB38/GH72K0JaJNKsTub6TFo2Wg8yKr
+      V6/nQuO/c9uWHYRd3fi9LlwBga62JhxJqUiRIDqNgNMbITHOhD8QYqCnfXwCuH39WlIsMpp3
+      9nPm1DEWLZzPux9W8MQTe5EEPeGAD2fQwJrylWRbqpABORzgwJlWNpfE83+PNnPPusUsT7RR
+      39BEXHohWQ4t77zzMSVLbqGn8RRvv/fxBN1SZThbz/LLf6/nfGsPAFrCaAxmOru6iLeaqKvp
+      wyaaSQx34w5q0RqCiIAU9JE1ZwEZ8VmE/R0011cTn5RM4/l6Gs6cIjWvG5mpKe4y8grwd7fQ
+      7fHhdjlxh8E40MXyTZ+n6mI/cx0Gjp3qZ8GqRSTOy8Lt/3TfcChIMBTCZrVSNK+UuakWPBFA
+      Z8ZiFFm2cg2nG/rZuno+p1vySIk3ofE0T7gA5i9fz5rSOdQcMtLefI5j56Ivotu23sPZVjdz
+      M2x88qfDlC7fSOqqMnzR9xAlc7L53//8JlmLNlAU3826lTvxhmSsJguhcIhTzW6SNW60Mtg3
+      rBs5FKK4uHjUpqnk5DQgSHd3HwBr1m+k6pMD5JUsRh8ZxC3pEWUJR4KNsN+PRhPiQMUJBH0c
+      ZYXJNPaGKUo1Y03O4GJtNZakNJz9PsLOFgrKyultbeDcheYx3cC2tjba29uHt9PT08nIyBjT
+      sWYCtbW1eDye4e3rPR+LxQyywKA3On4jI6cAMThAn1cmLy2B+uYe8tLtCHoj4ZCEyazj7Okz
+      pOcVkWK3UFNdTU7RXAbdbvSE0FodBHyD6LQaQsEgWjGCpIvD3dtBRlY2tdWn8Yela9oyEpWV
+      lZdtXxl+n5ycDEB3dzcAc0rL0XpaCBiSyE62UXexi8xEE/EOB8FABK1By/73PyQ+NYcl8/M5
+      f76RnLx8OloukJKahqA1EArLePxBNBEfoixg0MnjE8BMZjYL4EZgNAFMFWorkMqsRhWAyqxG
+      FYDKrEYVgMqsZkoEkJOTw7p164BoZXvz5s3s3r0bs9mM3W5n37597Nu3j127dmEwXHseoOmm
+      pKSEffv2kZ4e7QhavHgxX/jCF1i+fDkQDbbbtWsXohi9pQ8//DB33nknEG3R2LdvH2VlZdNj
+      /Ajk5eXx2GOPcffddw8H28XHx7N9+3YACgoK2LdvH/n5+QCsX7+eL3zhC+h015h8aYaQmprK
+      vn37mD9/PgBr1qzhySefJDc3F6PRyL59+1i9ejUQbUiYdAHcdddd/OhHP2LDhg0AbN++nU2b
+      NmE0Gvna176G3W5n8+bNVFZWsmrVKh588MHJNmlMfPnLX2b9+vVkZGSwZMkS/vZv/5aqqip0
+      Oh2CIPDcc8/x1a9+dTgjPfTQQzz22GNoNBpuvfVW7r33XhYtunrOounk8ccf58KFC6xevZq7
+      776bsrIyfvKTn/DII48AUQHce++9bN26FYA9e/bw6KOPotfrp9Ps6/Lkk0+yevVqSktLWbZs
+      GU888QQ1NTV86UtfwmQy8cADDwxf386dOydfAO+//z4/+9nPhrd7e3sZHIy2Tzc2Ng5/L4oi
+      fr+furq6yTYpZm699VbOnz9PV1d0LqFNmzZRW1tLaWkpfr8fWZZ57rnnCIfDw/tEIhGqq6sp
+      Li5myZIlHDp0aLrMH5FvfetbXLx4kYSEBJxOJw0NDXzzm9+8LM2RI0dYtGgRSUlJdHZ2EgqF
+      Rjja9JOXl0dycjLHjx8HoiHxTqcTQRDo6Yl2bPb29iLLMnFxcWRnZ0++AFwu12XbDocDo9FI
+      JBIhLy9v+HtJkhBFkaysscV0TBZarZavfOUrHDt2jPj4eHJzc9FoNJw/f55XX32V73znO5jN
+      5qvGHwB88MEHbNy4EZPJRF9f3zRYf322b9/O888/z09+8hPee+893G43Vy4b7fF4GBwc5K67
+      7mL//v3TZKkyvvrVr3Lo0CFSU1PJzs4mMTERq9WKLMuXDYb6+OOPuffee2lpaZl8ARQXF5OX
+      l4fD4WD+/PkkJn4aEGe32y9LGwgEZlxnldFo5A9/+APFxcXEx8eTl5fHBx98wIYNGygvL8fv
+      9yMIAkuXLkUURZYuXTo8UuvEiRPccccdVFfPvAlxNRoNf/mXf8kvf/lLBEEgMzOTzMxM5s+f
+      j9FopKSkZDhtZWUl999/P8eOHZtGi6+PIAhUVlaSkJAwLACHwzHsksbFxQ2nPXLkCA899BBH
+      jhxB88wzzzwD8Oyzz152QIfDMSEV0lWrVmE2m+nq6sJms/HKK6+g1+vR6/X89Kc/JRAIYDQa
+      ycjI4OLFi7z88suXuRJjxe12X9ZzarPZxtRzGgwGqayspLKykoGBAd555x3Onj1LR0cHxcXF
+      vPDCC/j9fjZt2sSpU6dIS0vj/PnzDA4OUllZid/vZ//+/bhcLlpaWujs7BzT9fT29hIMBoe3
+      x/t8tFotWq0Wq9VKRkYGPp+PuLg4ioqKOHfuHCaTiZqaGpxOJ8eOHcPpdHL0aDSQ78SJE0hS
+      bKEPV/LZXnpgQl58J06coLKyks7OTg4dOsTBgwfxeDwUFxfz0ksv0dfXRzgc5uDBg2g0Gv70
+      pz+poRA3CmooxOSg9gOozGpUAajMalQBqMxqVAGozGpUAajMalQBqMxqVAGozGpUAajMalQB
+      qMxqVAGozGpUAajMalQBqMxqRgyGM5lMV81JfyMRDAYvi54cikC9UfH5fEQikeHtG/35fDaw
+      D8BqtU6LHeoieSqzGtUFUpnVqAJQmdWMODv00PQfKio3MyMK4EYePaWiohTVBVKZ1agCUJnV
+      qAJQmdWoAhgjQ3OAWhOSKcjJICUjh4KCAsy66/enpObMpTgn+bpp9OYEVi4beR7RhOR0cjJS
+      yMjJp6AgH50AaXnzRjxuXGIKi8oWoIvxaX92obyblXGtETZbyS1ezIP338Gvf/oCDU4ve++7
+      lxPV9WisqQhBD/nzyujqduJ392MwatAYbNji4rlQdQSfzsqW9cswH6zAnJbPQGsdRkcWg33d
+      ONKz6WquJz0rh3mF+VQcPcXCJbeQYJRwR3QkWq0c/fg9PN4w9927jur6dqypGQQHIywsX4q+
+      r5bUOYtoPX+WrIK59Ladp7qum4cfuJOXf7ufhQvmYU90EI6bg63vKG3BBELuLiyObOL1Adqc
+      oei5wjocJhF7SiqiwUpOspXWHg8pcQYOHT0+3bd/QlEFMAZy8nPpb2/F6fVDOEhvUI8x4iNi
+      tLF6wyb0hPC6XNyz4x663QaOHPwTC+fPJ9RTxzkftDTUUb5hK0GXG1tBFgGjmXBER47ZT8vC
+      cjy1HyJf6plfs3IJ3ggEBga40OalKDOeyvPdBPXpRHxnMNqK2bhpM7V19SxevJQSbYS24gUM
+      1h2gZP1GqutfwWKNg9AgaXmlLFy6iOMf19Lc5ubzT+ziWEUVBQvmUn+ygjUrF0TP5Q/w4csv
+      se2hB7lzx076elrIzghis2lvOgGMGAoxXRMV3QhYLBaA4Ul+TbZEhEA/CWl5hAadpGVmUVtd
+      RZzdgQz0u7wsmFfI2arThAQ9C0vncb7mDNn5eQSDEgaLhfaGWpKy5tDT0kBadg7+wUEam5pJ
+      SsvCqgkhG+MhHMTn7qOrz4UtMYlAfw9pecX43E4SHQ48zh4sjnQ6GmtJzS2ms6kO12CAOEcq
+      mYlmOgcCOOItuN1u4sx6BiU9ckRi3589Ql/zeX715vtYNSEihnjcXc2k5c6hs72DNIcNpx9M
+      so+Glo7pu/GTgCoAlVmNWglWmdWoAlCZ1agCUJnVqAJQmdWoAlCZ1YxLAGad2o2gcmMzLgE8
+      vXLBRNmhojItjEsAt2SmkG4zT5QtKipTzrgEEJIk7irJmyBTVFSmnnFXgtfnZ2DVq3UBlRuT
+      cQlAkEEUBLYV3fxhsyo3J+MSgOiMLg59Z3EuWlGdV0jlxmN8dYDWHgTAoteyPk8dRK9y4zEu
+      AbjaezFKMjJw17y8ibFIRWUKGZcAZFkm2NYDQLrNwtL0pAkxSkVlqhh3K9BgSzc6QUCSZXaW
+      5E6ETSoqU8a4BeDr9yB6fAAsTHWQEz89s/yqqIyFCQmGG3KDIrKsdoyp3FBMiAAGmrowXBpS
+      eWteOnaTYSIOq6Iy6UyIACKhMFLPwPD2ncVqx5jKjcGEjQfwNnUy1Be2uTALo/bGXb1EZfYw
+      YQIY7OrHEJYAMGm1bCzInKhDq6hMGhMmAFmWCbRGK8MycEdxDmpwhMpMZ0KHRHqau9Bd8oNS
+      rSZuyUqZyMOrqEw4EyqAgNuL6PICIMmoHWMqM54JHxTvb+ke/r8kyU6RI36iT6GiMmFMuADc
+      rd0YL/UJRGSZu9WOMZUZzIQLIBKKEO7sG96+JSuFZItxok+jojIhTMq8QL6WHjSXSgEZ1PAI
+      lRnLpAjA0+1EFwgNb38uPxOT2jGmMgOZnJnhZAi29w5vajUiWwqzJ+VUKirjYdKmRnQ3daL/
+      zDjhO+fmIgpq15jKzGLSBBAc9CMMDA5v24161uSkTtbpVFTGxKRO6ONr6kJTmocMSMCesiJy
+      420EIhH84egnEIngC4UZDIYJhCP4wmECEQl/OIwvFEGKLmCjojIpTKoA3O29pM7Pw3/J83GY
+      jey8xuB5gegSTdG/l/92vL2XHx46hfszlWoVlYliUqdHl8IRQp+pDI+EDEiyTESWCUuXfxam
+      JvL8HWtYl5uu1iFUJpxJXx/Adb71ssrwWLDqdXx55QL+YeNyHOpoM5UJZNIFEK0Me8d9HBko
+      dMTz/a2rWJZ5/ZXWVVSUMiUrxPhbuibsWGa9jq/dupgnl5agE9UFblTGx5TkIFdrDxMZDSTJ
+      sKUom+9tXkG6VV2fQGXsTIkApHCEcKdzwo+bFW/lf25dybrc9Ak/tsrsYMp8CF9L93CA3ESi
+      02h4etUCnl65QB2IrxIzUyYAT3f/ZQFyE4kkw9rcdP5x6yryEmyTcg6Vm5MpXdplsLYJfVIC
+      shSdPUKA4f+RowPrGer5lWWQQWM2oHXEEdbrCI/SK5xkMfHt22/h+wdPcqy9ZxKvROVmQZDl
+      aK4SrnBPysvLR935J/HxUzbzgzHOgiXNjsYRjybBSkCOTss+Ej8+XMWHje1TZJ3KjcoNs7iX
+      3zWI3zUItKDRabAk2zGkJIxYOnxpxQISjAZ+W9M4Lfaq3BjcMAL4LJFQBFdbD1yalNcYZ8Gc
+      akebFI/4mdLh4UVF2E16/vX4uek1WGXGckMK4EqGS4e6FnRmA45lcwmYjUhE1y9LMBr4p4oq
+      NbJU5Spuuq7UkDdA54EqdF39iERDKFbnpPF3ty1Rm0lVruKmEwBEW5a6jp1DqmsZLuIWpjp4
+      dsMybAbdtNqmMrO4KQUwhPN8G4NHazFEok2t+YlxfOf2FSSZ1WlaVKLc1AIA8PYM0HvgFIZB
+      PwApVhPf27yC7DjLNFumMhO46QUAEPIF6Tx4Gl2nE1EAm0HPdzatYF5ywnSbpjLNzAoBAMiS
+      TNfxOiI1zegAvVbDf11fzqpsdaD+bOaG6QmeSEyJccQvLSKg1YAM53r7aXEN0uYepHlgkKYB
+      D71e/3SbqTIF3BT9ALHi63MROnCapGUlBKxGipMSKE6KukOiAKIg4AtFaHUN0uLyXPo7SFO/
+      h85Bn9qfcBMxKwUAEPYH6fz4NEkLCxAzkwhK0UwtydEB+jqNSJ7dRp49Gl0qABpRICzJ1PcO
+      8KtT9VR19V3nDCo3ArPSBboSg9WEJTMJfZqDiNkwatQpgEYQONzSxS+P19I56JsCK1UmA1UA
+      V2CKt2DJSkaflkhIQQi2LMv8/lwTr1adxxeOTJGVKhPFlAhAIwMRGZ9PQqcTMRgEQgLXDWee
+      CZgT4zBnJqFLtRPUaa/r+3uCIX5z+jx/qG+e8del8imTIgAB0Eng9Uq4ByX6PBHcfmk4Y2hF
+      sJs12MwiFrOI2SQSEWEmvz8tjnhMmUno0xIJaASka+RyAWge8PBvJ85xomP0CcFUpp8JE4BO
+      hlBAxuWJMOCRcHojRBS+CkUB4owicWYR6yVRoBEIz0D/ShBFbGmJmAszCVkM1xSCRhD4pLWL
+      fz9ZR4tr8OoEKjOGcQngfxlt+L0y7sEIfYMSgfDEFf4WvUCCWYPRKGDQCeh0AgadiKABSYiW
+      FtPtasRnJWMuziag117TFgF4u76ZV07XMxgMT7V5KgoYlwCeatZdtd9koxXBqBMw6UQMOgH9
+      0Ecf/avVCsMCkabAHkEUSMhNw1iQgV937XDrQDjCqc5eWi51sjUPeGhxDar9CTOAG04AoyEK
+      YNAKmHQCRr04XHoMCUWnE5AFiAgTKxBBFEnIS8NQkB7tYb4OWlFAkmXa3V7a3F6aBjy0uQZp
+      cLppcw8SjEyFdFXgJhTAaAiAfkgguqh7pdEIiGL0Hojipd5gUUAQuPR9dFsUQBCjHWKyAOFr
+      tGSJGpGEggwM+en4Y5wUWCsKyDJ0D/ro8HjxhiIEL62lMLR2QjAi4Q2Gh9dY8IbCw78P+AO4
+      gyHC16qYqFyTWdcTLAOBsBytr4yj/8qoFbAaBEwGEYNewGiINu9qZQlXXQtyYwf2oiy0OSkE
+      RjiGKAhoBBAREGUZORhBDoZIDYZJETWIVgNoNIh6LWhFBK0WiWjJJV8a9ywjIyBctq6CPxzB
+      HQgx4A/iCYbwBEO4AkFcgRDuQPS7AX8QfzhCKCIRiEQIS9Hp6SOSRDAiEZYkwpJ807tps04A
+      E4U/LOMPyzB4ubuiEcGiF7EYgvS01mOLbyZpXhYaqwFNKAzBEHIwjBQKEQkECQbDSMEQ4WB0
+      0rDrZTdBENBoNGgNWkStFo1ei0anA60GbVYyAb2OkD+MFAhjCISxB8LYAmEiwQghX4RwUCYc
+      EAj5RYIBLaJGh96gRW/SRT/G6F+tUYvOqEOr16A16UAnIug1SJJEKBQm/BmBhCWJcEQiKElE
+      JJlQJEIoHImKKCIRRMYvy/gkCX84wuClEuvT/8N4g2H8kchwyRar5sKSNOYGkXG5QJl+4abr
+      CZ5ONJdu5tBqOTA0P9inj1eSp6f1SxSiruI1232vRGDYfkG49BEFRI2IRqtB1EX/ChoRQaeB
+      oesVBOQrcv9oZ7vW75IsE5Hky7dleVhYDU4XkUsbYy4B7HY7/cEgg4PK2rktFgt+vx+NRkMw
+      GBzraa+JVqtFEATC4TCyLGMwRBfRCARGcj7GTlxcHC6Xa8KP+1lEUUCSZlpFOHbZGQwGwuEw
+      kcilLk4pAsEQTOzjHxdjHhAzb948tm/fjqhwjv6tW7eyd+9eUlOVD0DZvXs3jz/++HXTmM1m
+      tmzZwtNPPz1cihkMBh5//HE2bdqEVnt9jW/ZsoVNmzYptik7O5unn36a4uJiRek1Gg1f//rX
+      Wbt2reJzrFu3jieffJJt27YpSj937lyefvpp5syZM2k2rVmzhm984xtoNMpm1hBFkS9+8YuK
+      PIkhli1bxuc///lRn9kQsV43XJ2nxiQAs9lMT08P/f39ivd5//33cTqdMbUa+f1+nE4nGRkZ
+      I6ZJTk4mPz//spum0Wh4++236e7uRqe7/iwQGo1muMQYjZSUFAoKCjh8+LDikk+WZT766CM8
+      Ho+i9ADt7e0MDg7i8ymrpbtcLs6cOaM4faw2paenY7FY6OpSttCJIAgsWrQIv98fU0kmCAJG
+      o/IJC1pbW2lvb48pH7pcLvbv3z+8PSYBhMNh0tLSyMnJUbyP3W7HZDLFJAC73U5JSQmFhYUj
+      prl48SIvvPACP/jBD4ZvtlarZc+ePaxatQqTyXTdc+j1esU2WSwWrFYreXl5dHR0KNqnuLiY
+      DRs24PcrH2GWnJyM1+vlwIEDitJHIhESExMVl8ZFRUUsXLhQcXqA3t5eRFFUfK8CgQAHDhyg
+      ra1N8Tn0ej1arVaxaFJTU8nKyiIxMVHxOYLB4GWl95gEEAwGGRgYiOmGuFwumpqaFL+lAKqr
+      q/nggw/45JNPrpuuuLiYRYsWDdvS09NDXV0dZ8+eZWBgYMT9BEGgra0Nr1fZGip7BL8AAA82
+      SURBVGYNDQ1UVlYiiuKnfu0onDt3jt7eXqxWq6L0AAMDAyQkKB+wP2/ePCRJUlyS1dXV4Xa7
+      FV9De3s7cXFxpKamKsqcsixTW1vL8uXLKS8vV3zt7e3tip9FSkoKS5Yswe12Ewopn3Zfq9Ve
+      5saNqxk0GAwqVqtGo2HFihVcvHhR8fGTk5PRaDSjisZsNrNmzRqOHj0KQGJiIqFQCL/ff92H
+      XFBQQHx8vGJ7IOoO5ObmotFoFGUgSZJoaWmht1dZdGhCQgIpKSkEAoGrWkRGIjU1FYtF+TQv
+      siwjCMKo7uFn6ejooLW1VfELTxRFzp49S0tLCwaDYVR3KyEhgfz8/GgLmIJz9Pf388knnxAM
+      BhULH6L58LO2jLkSPPQWVHpDdDodbW1tio3dsGED8fHxiipdcXFxVFRUIAgCer2evLw8cnNz
+      R810fX19LF68OKa3bXV1NceOHVOcOUVRxGQyKXYX+/v7cblcwy1bSm06ffq04tYpQRBISkqK
+      yQVKSkrC7/crtqmgoIBFixZhsVgUiX9gYIDS0lISExMV3dtgMEhPTw+rV6+OqQ7g9/svq2eM
+      SQC5ubkUFBQQDodjEoBGo1GccRobG2lra8PpHH1tsZaWFm699VYg+nC9Xu9VRd21cDqdnDx5
+      UnGFFqLuRiyZR5ZljEYj7e3K1yowGo2K75PVaqWwsJC8vDzi4uIU7SMIAm63m/Pnzyu2KVby
+      8vKQZVnxy0WWZT744APFLhBEW40EQcDhcCje58om+DEJoKuri8bGRgDFDyoYDMZUYsybN48l
+      S5aQkpIyatrs7Gxqa2sRRZFAIEB7ezsXL17EZht9uSRRFBU37QExpQWGS6Xbb7+d3NxcRfsM
+      9ZcoQavVUlVVhc/nU/SyGCIYDF63de2zDLX6Xbx4UfHz7u7u5siRI9etg10LvV6vOO2FCxcQ
+      RVGxG75x40bKy8svazEcUx0gMzOTHTt2UFVVpThDC4IQk197+PBhKioqFN2Q3t5edDrd8I0Y
+      GBjA6XQqeuvGUqEF8Hq9OBwOxTd95cqVuFwuqqqqaG1tVbSPJEkkJycrOkd/fz/p6elIkkRK
+      Sgp9faPPVJGbm8sbb7xBerqy1TXD4TAmk4m5c+dy+PBhRfscO3YMu90ek5uVkJDA6dOnFaXN
+      zMzk9ttvJxxWPs7C4/FQU1Nz2T5jKgEaGxt55plneP311xVnnqEeWqU3pLe3l+TkZNLS0kZN
+      63A4hotD+LQiqaRiGEu7M0TfUL29vTG5fv39/VgsFsUPq7e3l4aGBsUvi8zMTKxWK/X19YrS
+      L1u2jH379pGdna0ofTAYxGaz0dOjfN21devWsXfvXsrKyhTv09nZyYoVKxQJv7W1lXfeeYfu
+      7m7F99Xj8WA0Gi/Ls2MqAYZOGMubMzc3F0mSFL85V69ezbx58xgYGODEiRMjpjObzbS3t3P8
+      +PHhDOP1eolEIopKj1ja5+12Ow0NDbS3tyu+9g8//FDx8SHqO0ciEdLS0hCuERtzJVqtlrlz
+      5yJJEqmpqYpKmf379xMMBmPqkzl79mxMvbqyLNPb2xvT/dXr9QwODipqYRMEAZ/PR1paGocO
+      HVJ0/Orqaqqrqy/7bsqiQWtra2PqOGtsbESv14+aAcLhMBkZGcNNWzqdjvLyckwm06gxR4WF
+      hfh8vlE7y4ZISkoCYM6cOTQ2Nsb0AlBKIBDglltuwePxKCoBJEni9ddfx+/3K34TdnR0YLfb
+      FQsgISGBhx56iI6ODsUvsI8++khRuiFSUlLIysrC5XIpuq+CIJCfn09TU5PikvJaTNnkuGaz
+      ORrDrtDYtrY2Dh06xMGDB6+bLhgM0tXVRV5eHsCwi9XZ2TlqTEl9fX1MpVJdXR0Oh4OGhoZJ
+      yfwQ7Qx67733+PWvf61YAJ2dnRQVFSnu04jVPenv7+eXv/xlTP0AgiCwe/duSktLFaW3WCwk
+      JCQMh3yPhiiKLFy4EEmSYmrFu+o4Y94zRlauXInJZFIc6ASwb98+Vq1add002dnZOByOYXch
+      EAhw/PhxbDabooydmJgYkytQUVFBbW2t4vRjwe12K46YFUWRJ5544rI60GiMxT2JRCJUV1fH
+      9LaVJElxHau9vZ0PP/wQWZYVPbdwOMyLL77IRx99FHPL3GeZMhfo2LFjuFwuxc1ixcXFdHZ2
+      jho9GggEKCoq4uLFi8Mi0Gq1hEIhRS5BZWUlixcvVmTTTESSJKqqqkhOTsbtdivaZyzuya23
+      3kpZWRnPPPOMon1KSkrIycmJKWYqKSmJ/v7+4ec3GmvXrmXJkiW88cYbNDU1KTrPlUyZADwe
+      D1u3buX999+nubl51PThcBiPxzNqJu7q6uIXv/jFZd9pNBpsNtuonSplZWU88MADfP/73x/9
+      AmYwR48eJTMzU9HLRRRFdu/eTSAQoKOjY1QXExhuUGhqalJUMYdoDFRSUpLiZs3e3l5SU1PR
+      6/WKSgBRFJk7dy4mk0lxHe5aTJkA4uPjkSQJs9msKP2FCxcoLS0lKSmJ/Px8GhoaFJ/r7rvv
+      pqamZlR369SpU1RXVzNv3jxF7eczlYKCAnbs2MFbb73FmTNnrptWkiReeeUVdu/eTXd3t6Lj
+      9/b28vLLL8dkkyRJlJSU0NnZqShUobW1VXE/ydDxf/7zn6PX68c1wGrK6gAul4uenp6Yeis7
+      OzupqamJKYIUIBQK0dHRoWi/wsLCmOolM5G+vj5ee+01ampqFO+j9EU0xIIFC9i7d6/ieoZG
+      o8Htdo+rhWY0srKyuPvuu2MaZHUlUyaARYsWkZSUFFPoampqKqmpqYr9yCFeeuklGhsbRx3A
+      sXr1atauXXvd8QY3ApIksXXrVsWtQIIgxBQ+DdEMHUucjiRJWCyWmGL1Y8Xj8cQUCHctpkwA
+      1dXVuN3umMKPg8FgTAMqYqWxsZHz588rdgVmKnq9PqaQA1mW6e7uVuw6CILA2rVriY+PV1wC
+      SJJER0dHTCV+rNjtdtLS0mLuzf8sU1b2y7KMyWSKqcmqsLAQo9FIZWXlpNjU1tYWU4j2TObY
+      sWMxtdEvXbqU/v5+RU26sixz+PBhRWEpQ9x///0kJibi8Xg4d+6c4v1iwefzEQqFYiqZrmRK
+      SgCtVkthYSF1dXWKB26UlpbidDr54x//OKm23XvvvWzcuHFSzzHZyLLMypUrFb8JZVnmzTff
+      5Pjx44rPodfrFfetQPTlIknSpJaua9asQa/Xj6sEmDIXqLi4mIULFyqeqiQzM5O4uDjuuOOO
+      SbVLkqRJrahNNlqtlry8PHp6ehTfW4vFQlFRkeK6T0lJyXDYgVJXq76+ntdee43Ozk5F6cfC
+      xx9/TDAYjMn9u5IpcYHC4TD/8i//EtM+7733Hn/84x8nvYVmYGBgXD2J000kEmHFihVUVVUp
+      FvL27dtpaGhQ7Dq43W66urpiih+KteFiLAiCoLjTbCRmbPvfUAdYLPHesbJ161YsFsukxfVM
+      BYIg8Oqrr446/vmzRCIROjo6FFeCY22jnyqGmnJjbdL9LDNWAFNBfX09+fn54/IhpxtJkmJu
+      KfvNb34zSdZMHYIgUFxcjNPpHFc9Y1YLICkpaXhcsMqNhSzLvPXWWwiCMK5QiCmrBM9E9Ho9
+      paWl7NixY7pNURkjsiyPqxl0XLNDq6jc6MzqEkBFRRWAyqxmxErwZMbgqKjMFEasA6iozAZU
+      F0hlVqMKQGVWM2IdQOkSQCoqNzIjCkDJxLIqKjc6qgukMqtRBaAyq1EFoDKrUQVwFQbKyuYh
+      ACZbJo/u2QmClkcefYRdj32ZOSNMcpCQXsgjjz5KQWq07rRsw07uunMTm29byYoVK4bT/acv
+      f4nMwoXML1/DwzuuvU6vJbWER++7/trFgtbIl7741Ii/W5PzuH/nRpasWMPyFatJNIskFCwd
+      8Zyr129mzW2bKM6yA2Cyp1GQbr+uDcBl13YjMqvDoa/FzkeeZP38LP6x5e9p6fNhthrRakAj
+      QHffAHfd9yCfXPCyZf0yqk6fYeniYr73354lLjmZ0uICfAPraHnz98haIy01B1h7516CkQiW
+      1DnckqOnzeMhc04pYecFytbcwYp2P3fs2EHL+ToySxbwp9d+wcEaNynZc/hPf5ZBd9CEQ+xD
+      mzyf5tqTLFm6mLa2VgTp0zV4H3r8zzCbDHT2eIg3BGmtOsR7xxtIzNyGsesEcXmLSEm0ojXH
+      oTXIPPvss7S3t0HYhxyR+emL/4elZcW88E8vkFm8iH/47jc4eOBjso1ebHNXo3G10BsykpJo
+      or3dic5kwOXxY/E0YEgvITl/PisXFnKm+gw5iTq++8K/Tu9DjAFVAFdQX3mAptMa2p0+TLZE
+      JIzcftt6IjJoI166XDJCwEXlxx/S5vQSjMhojTqsZhMHDlTgcNjQiBqEsJ/0OWWcPlZBYnYR
+      /r4WLhqTiGjMyP4BrGYzp6vrSU2Kp7b2DJ+crGV+vwcEEUJe2jr7aG/uJntOBv2DEbo7j6OV
+      AtTWnuFo5WlWLi8jGPQiAF0dnVgM0D0g0RPowayPxscfOF6L2NUAcelYIiFEbYBer49A7Rk+
+      +eQkZWXzGOyPzoh3pq6F9beuwZiYzsnK4wz2d9Njluiuq+VC1VFu2/kQ7s6ztHZ4sRig36eh
+      7dRhytan4e7p493/V0MADXI4BQG4UUZZq+HQKgrQcNvGDXh7O/jkRNV0GzOhqAJQmdWolWCV
+      WY0qAJVZzbRUgs06LXkJsYdahPuUrYQ+FXi8ymZI69HJBGfwa8YWBlsktlB4q3kGX1AMCDrt
+      9AggL8HGM59bFvN+zrePTII1Y+P4RWVTtv9Hcog2w9jbRJKTkxkcHLzuwG+j0UhCQsKYJqOa
+      69WwzBXbxGBLSsc+C8NMQptoU5tBpxtRFHn66afp6enh8OHDtLa2MmfOHNrb20lOTh5eMSUc
+      DnP27FnWr19PQUEBv/jFL4iLi+Opp57i9OnTWK1Wjh8/Tnd3N1lZWTidThwOB1VVN1erzUSj
+      CmCaGVrlsKamhu3bt+P1erlw4QJLliwZFoPBYKC7u5uWlhbsdjtms5ny8nJOnTqF3+/HYrFg
+      MBhYunQp8fHx2Gw2jh8/zoIFCzh37ty4VlC52VEFMM2Iosj+/fupra3F5XLR1tZGbm4ufX19
+      ZGdn8/rrryOKIklJSbjdbvbv34/VaiUSiaDT6Th48CDNzc1YrVZEUSQSibBnzx70ej3vvvuu
+      mvlH4f8D1aIJERRQTHsAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 5' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABGvAAARrwH3/UuE
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 6' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABGvAAARrwH3/UuE
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 7' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABGvAAARrwH3/UuE
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='44' name='Total Comments BAN' width='84'>
+      iVBORw0KGgoAAAANSUhEUgAAAFQAAAAsCAYAAAD7Gp9tAAAACXBIWXMAABGvAAARrwH3/UuE
+      AAAAfElEQVRoge3QAQkAIBDAQLV/57fEQJC7BGN7ZmaROa8DfmNozNCYoTFDY4bGDI0ZGjM0
+      ZmjM0JihMUNjhsYMjRkaMzRmaMzQmKExQ2OGxgyNGRozNGZozNCYoTFDY4bGDI0ZGjM0ZmjM
+      0JihMUNjhsYMjRkaMzRmaMzQ2AX65gRUvaAIWgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='44' name='Total Dislikes BAN' width='84'>
+      iVBORw0KGgoAAAANSUhEUgAAAFQAAAAsCAYAAAD7Gp9tAAAACXBIWXMAABGvAAARrwH3/UuE
+      AAAAfElEQVRoge3QAQkAIBDAQLV/57fEQJC7BGN7ZmaROa8DfmNozNCYoTFDY4bGDI0ZGjM0
+      ZmjM0JihMUNjhsYMjRkaMzRmaMzQmKExQ2OGxgyNGRozNGZozNCYoTFDY4bGDI0ZGjM0ZmjM
+      0JihMUNjhsYMjRkaMzRmaMzQ2AX65gRUvaAIWgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='44' name='Total Likes BAN' width='104'>
+      iVBORw0KGgoAAAANSUhEUgAAAGgAAAAsCAYAAACJ1f3bAAAACXBIWXMAABGvAAARrwH3/UuE
+      AAAAgklEQVR4nO3RQQ0AIBDAMMC/58MBX/ZoFSzZnplZZJ3fAbwZFGdQnEFxBsUZFGdQnEFx
+      BsUZFGdQnEFxBsUZFGdQnEFxBsUZFGdQnEFxBsUZFGdQnEFxBsUZFGdQnEFxBsUZFGdQnEFx
+      BsUZFGdQnEFxBsUZFGdQnEFxBsUZFGdQ3AUyDARUu7Kg2gAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='44' name='Total views BAN' width='84'>
+      iVBORw0KGgoAAAANSUhEUgAAAFQAAAAsCAYAAAD7Gp9tAAAACXBIWXMAABGvAAARrwH3/UuE
+      AAAAfElEQVRoge3QAQkAIBDAQLV/57fEQJC7BGN7ZmaROa8DfmNozNCYoTFDY4bGDI0ZGjM0
+      ZmjM0JihMUNjhsYMjRkaMzRmaMzQmKExQ2OGxgyNGRozNGZozNCYoTFDY4bGDI0ZGjM0ZmjM
+      0JihMUNjhsYMjRkaMzRmaMzQ2AX65gRUvaAIWgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Total views by region' width='184'>
+      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
+      rkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='total disikes by snippet title across regions' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABGvAAARrwH3/UuE
+      AAAG00lEQVR4nO3d2WtcZRjH8ec9Z/ZppjMZM0kT7eJSVxQ3FPFKvPDSv8C/wRtBBEHwxktR
+      /A8ENxAXEHdFREQUQasgWq1plia2oWmTzGQdL7wQNTN1mpM588zv+7lr5pzJ07TfyRvOmzOh
+      3W63DRAVpT0AkCYCgLRM2gP0avX3OZt969O0x9hVJmM2Xnf3JZXm7l+rOfeH/f7i22mPsat8
+      LljlukLaY6AHLIEgjQAgjQAgjQAgjQAgjQAgjQAgLXjbC7Q2PW9z73yW9hi7ysTBxrgQ5oq7
+      AIAksQSCNHffr1dPzdnMGx/ty3OPVmMrFnhNUOIugOb8Hzb90jv78tzRlVkLB919SbAHvNxB
+      GgFAGgFAGgFAGgFAGgFAGgFAmrutEGunz9j8u5/vy3NXK1wIU+MuACBJvNxBmrvr/iu/zdrM
+      6x/s+XlGypEdHIkTmAiDonDNlEW53v5LuwugdeasnX71vT0/z1g9Y/mJbAITYVDkNm61UO7t
+      vkwsgSCNACCNACCNACCNACCNACCNACDN3VaItZkFO/P+F3t+nnIpspEy/Q+T/OFxC9neLm66
+      CwBIEi+BkOZuK8TKrzN2+rXetkJURuKB3PeTv6ph8Uix6zHh2A0WRht9mkiPuwBaC+ds5vUP
+      ezpnYixj+cbg7fuJ7zhuUaPa/aCxSQLYRyyBII0AII0AII0AII0AII0AII0AIM3dVoi12UVb
+      +OjLns45UIqsXBq81nPjoxaV8l2PCVNHLVRqfZpIj7sAgCQN3ssi0EfutkKsnDxt06+8e1nn
+      Tk1kLIpCwhN1lh2tWG6y3vmAQsmiW+7u2zz4L3cBtBaXbPbNjy/r3NrxgmWz/QvADjcs2zra
+      +fFKzYwAUsUSCNIIANIIANIIANIIANIIANIIANLcbYVozi3awidfXda5V4xmLO7jZYC4UrZM
+      vdL5gFzBomPX928g/Ie7AIAksQSCNHdbIZa++dFOPPVCx8cPNbJWr+5+D6DijUcsN96nrcW1
+      MYvvf6g/nwuXzV0AOxubtr641PHxzShrO+3d/1rtlZpZJbdfo/1T6UB/Pg/2hCUQpBEApBEA
+      pBEApBEApBEApBEApLnbCrG11rLWmbMdH89mgsUd3gsjKuQsZPr0RhlxxsKBLvuAMBDcBQAk
+      iSUQpLnbCrH0zQ/2/ZPP93zezccLFsL/3wudP9yw4jWTlzwu3HafRUeu63keDAZ3AexsbNnG
+      ueXezzu/3tNNsdorRbNW89IHbm/1PAsGB0sgSCMASCMASCMASCMASCMASCMASHO3FWK72bJW
+      l98J7iSfj6yXWwKFbMZC7n9cJskXLeS6v88XBpe7AIAksQSCNHdbIZa+PmHfPfGc1WuxTY5n
+      Ox4Xlws2cs9Nf3+gUrX4gYf7MCE8cRfAzua2bS5ftK0otna58z1+dtpbZhutvz+wsd6H6eAN
+      SyBIIwBIIwBIIwBIIwBIIwBIIwBIc7cVYru1buvnzlscBet6i58osqiQ+8efA/fsx7+4CwBI
+      krsrwVsra9aaX7ByvXzpg3MF7s6GrtwFcP77n+2Xp5+1ux6520LU/UeYcOS4hXse6NNk8Igf
+      giGNACCNACCNACCNACCNACCNACDN3XWAuJi3wtSEhZGq2aXu918o9mcouMVWCEhjCQRp7pZA
+      mxdXbfXUnGUzwfLlrMWTkxYynW+PAnTjLoDlE7/Yt48+Y1fUYrv6zkNWeexxs2o97bHgFEsg
+      SCMASCMASCMASCMASCMASCMASHN3HSAu5a18bMoKB2OLG2Nmcbd7owDdsRcI0lgCQZq7JdDm
+      hRVrL521bDn/1zs0VqppjwTH3AWw/MNJ23zrZWvcfsTC4Wst3Ptg2iPBMZZAkEYAkEYAkEYA
+      kEYAkEYAkEYAkObuOkCmVDA7dMjsYN2MtzzCHrEXCNJYAkGauwBWp+dt7aef0x4DQ8JdAM3Z
+      RWue/C3tMTAk3AUAJIkAII0AII0AII0AII0AII0AIM3dXqDi5JiFGu/9hWSwFwjSWAJBmrsA
+      1qbnrb28lPYYGBLuAmjOLVr74nLaY2BIuAsASBIBQBoBQBoBQBoBQBoBQBoBQJq/vUBT4xZG
+      8mmPgSHBXiBIYwkEae4C2F46m/YIGCLuAmhfYB8QkuMuACBJBABpBABpBABpBABpBABpBABp
+      7gKIqrW0R8AQYS8QpLn7DgAkyV0A7Qvn0x4BQ8RdANZcSXsCDBF/AQAJIgBIIwBIIwBIIwBI
+      IwBIIwBI8xdAuZL2BBgi7AWCNH/fAYAEuQtg9dRs2iNgiLgLoLXIG+QhOe4CAJJEAJBGAJBG
+      AJBGAJBGAJBGAJDmLoDSlRNpj4Ah8ieCBFIOiEwAbgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='total likes by snippet title across regions' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABGvAAARrwH3/UuE
+      AAAC9klEQVR4nO3cS2oUUQCG0RvNQJfgEpy6f9CRI8EHCEYMRkPAFyqRkE7S9nUJGrtJod85
+      C6j6Jx9cqEvtzTnngKhbSw+AJQmAtP2lB/yr5no95ssnS8/Y2urwZMz1z6VnLEYAf2uzHvPg
+      2dIrtnb+8OmYF1dLz1iMIxBpAiBNAKQJgDQBkCYA0gRAmu8Af+v2/ti7/2DpFVu7e+de+kPY
+      nstwlDkCkeYIFDe/fhrz/ZulZ1zLZnU5VkcfdvIsAcTN029jvn6x9Ixr+Xl6NlaPX+7kWY5A
+      pAmANAGQJgDSBECaAEgTAGmuQsTN71/GPDlaesa1bC4ux+Xx5508SwCkOQKRtvVViM3B8zHO
+      fuxiyx85f3My5tX6xt7H/23rAObx4RhfP+1iyx9ZPXo25uryxt7H/80RiDQBkCYA0gRAmgBI
+      EwBpAiBt66sQm7evxjg/29We37p49zH9Hxt2y10g0hyBSBMAaQIgTQCkCYA0AZAmANIEQJoA
+      SBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0
+      AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMA
+      aQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAm
+      ANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIg
+      TQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIE
+      QJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCk
+      CYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoA
+      SBMAab8ArYByoVMCeUUAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='views by category' width='192'>
+      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
+      26+DVJVAepT9Fgtlj0rFo1gKqF+6QfkbLxO+egERye7j0wSNk+zEbvdwrQ5p/3E3wfUScM9v
+      F0l7/T2S23t/gYAUfLxwKyheMUDCEK8Y4BVD/JNLe7+bD1xxNHVokhK3Y+L2Or1WTK/Zo9fq
+      0W1k/09jR1AsEFUCokpAcbFIWAkJKyFBeXOiVRhmCxP7hc2PzZD4vgXgaMh6watJgWoNqCkF
+      SSgXOlS+qHHi1WU8D7SboL0ETd3TGzHZvIUSITtxs/9kVw1h2zv20yuJsvXODLt2z+x/Tbr5
+      Nar978me8IohC9/9JmkCcSc7qbvNHr1GNzvJWzG9dkKvnRB3U1zaD8UIfxFP8HwhLPlE5Swc
+      YSWkuBgRLUZECxFBKRglAEKhUiIpPW9yi5kVCjSBZgKPbm2egeIhZCNKB2siWxXy7Fh27m89
+      J5LVVATNDuw4FxVQffrdA8cHfspgRgTky+ukqaIpz+FDwcc7wNt0L4Ze1VGvdoEum012IFkr
+      3ND9AMYcRbM5ss2YKbEAmFyzAJhcswCYXLMAmFyzAJhcswCYXLMAmFyzAJhcswCYXLMAmFyz
+      AJhcswCYXLMAmFyzAJhcswCYXLMAmFyzAJhcswCYXLMAmFyzAJhcswCYXLMAmFyzAJhcswCY
+      XLMAmFyzAJhcswCYXLMAmFyzAJhcswCYXLMAmFyzAJhcswCYXLMAmFyzAJhcswCYXPt/hN2e
+      2YYbaggAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
