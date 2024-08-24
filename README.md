@@ -53,6 +53,6 @@ Overall, we have to process both CSV and JSON data in the cloud environment and 
 2. **Create an Extract Connection**: Connect Tableau Desktop to Redshift.
 3. **Create Visualizations**: Use Tableau Desktop to process and visualize the data.
 
-> ### Checkout Tableau data visualization at [Youtube data metrics \| Tableau Public](https://public.tableau.com/app/profile/ravi.shankar.p.r/viz/youtube_data_metrics/Dashboard2)
+> ### Checkout Tableau data visualization at [Youtube data metrics \| Tableau Public](https://public.tableau.com/app/profile/ravi.shankar.p.r/viz/youtube_data_metrics/Dashboard3)
 
 
